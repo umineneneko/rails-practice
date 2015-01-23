@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class MemberTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "Get data" do
+     p 'get data'
+     p Member.all
+     assert Member.all
+  end
 end
