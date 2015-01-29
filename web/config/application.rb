@@ -19,5 +19,11 @@ module Web
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+config.after_initialize do  
+   Disqus::defaults[:account] = "teeestonly"  
+   Disqus::defaults[:developer] = true  
+   Disqus::defaults[:container_id] = "teeestonly"  
+   Disqus::defaults[:show_powered_by] = false  
+   end  
   end
 end
